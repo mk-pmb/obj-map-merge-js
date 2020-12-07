@@ -1,5 +1,5 @@
 { "name": "obj-map-merge",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Map over an object's key/value pairs and merge (Object.assign) all partial results.",
   "keywords": [
     "dict",
