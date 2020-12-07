@@ -20,8 +20,8 @@ function maybeSort(cmp, list) {
 
 
 const omm = function objMapMerge(func, opt) {
-  const { init, sortKeys } = (opt || false);
-  if (opt.sort !== undefined) { throw new Error('Did you mean sortKeys?'); }
+  const { init, sort, sortKeys } = (opt || false);
+  if (sort !== undefined) { throw new Error('Did you mean sortKeys?'); }
   function mapper(obj, dest) {
     const accum = doInit(init, dest, obj);
     if (!obj) { return accum; }
