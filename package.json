@@ -1,0 +1,38 @@
+{ "name": "obj-map-merge",
+  "version": "0.0.1",
+  "description": "Map over an object's key/value pairs and merge (Object.assign) all partial results.",
+  "keywords": [
+    "dict",
+    "map",
+    "merge",
+    "object"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/obj-map-merge-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/obj-map-merge-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/obj-map-merge-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "omm.mjs",
+  "scripts": { "test": "nodemjs test/all.mjs" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {
+    "equal-pmb": "^0.1.23",
+    "nodemjs": "^0.1.8",
+    "p-fatal": "^0.1.3",
+    "usnam-pmb": "^0.2.4"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
