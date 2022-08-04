@@ -27,13 +27,22 @@ The results will be shallow-merged into `dest` (see `init` below).
 `opt` is an optional options object that supports these optional keys:
 
 * `init`: Where to merge the intermediate results into.
-  * `false` (default): Merge each batch into a fresh empty object.
-  * `null`: Merge each batch into a fresh empty object that has no prototype.
+  * `false` (default):
+    Start with a fresh empty object
+    and merge each batch into that.
+  * `null`:
+    Start with a fresh empty object
+    that has no prototype
+    and merge each batch into that.
   * `true`: Merge into `dest`.
-  * a function: Merge into the result of this function,
-    invoked with parameters `dest, obj`.
-  * a string: Merge each batch into a fresh object that results from
-    JSON-parsing the string.
+  * a function:
+    Start with the result of
+    `init(dest, obj)`
+    and merge each batch into that.
+  * a string:
+    Start with the result of
+    JSON-parsing the string
+    and merge each batch into that.
 * `sortKeys`: Whether to map `obj`'s keys in sorted order.
   * `false` (default): Don't sort.
   * `true`: Sort by key, using the default comparison.
